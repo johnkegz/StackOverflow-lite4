@@ -1,0 +1,470 @@
+
+a{
+	text-decoration: none;
+}
+.header{
+	position: fixed;	
+	left: 0px;
+	top: 0px;	
+	background-color: rgb(128,128,128, 0.7);
+	width: 100%;
+	height: 60px;
+	border-bottom: 2px solid silver;
+	
+}
+
+.left{
+	color: rgb(133, 0, 0);
+	float: left;
+	padding: 15px 0px 0px 90px;
+	font
+}
+.right ul{
+	list-style: none;
+	margin: 17px 90px 0px 0px;
+	padding-left: 0px;
+}
+.right ul li{
+	display: inline;
+	margin-left: 15px;
+	padding: 5px 5px 15px 5px;	
+}
+.right ul li a{
+	color: rgb(133, 0, 0);
+	text-decoration: none;
+}
+
+.login-background{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+
+}
+.main{
+	position: fixed;
+	top: 10%;
+	left: 14%;	
+	width: 70%;
+	bottom: 10%;
+	background-color: rgba(0, 0, 0, 0.5);
+	
+}
+.main1{
+	position: fixed;
+	top: 5%;
+	left: 7%;	
+	width: 90%;
+	bottom: 5%;
+	background-color: rgba(0, 0, 0, 0.7);
+	
+}
+
+.login-section{
+	margin: 5% 60%;
+	width: 40%;	
+}
+.login{
+	background-color: white;
+	width: 80%;	
+	border-radius: 5px;
+	padding: 15px 15px;
+}
+
+.login input{
+	border: 1px solid grey;
+	padding: 8px 10px;
+	border-radius: 5px;
+	margin-bottom:15px;
+	width: 92%;
+}
+
+.login button{
+	border: 1px solid grey;
+	padding: 8px 10px;
+	border-radius: 5px;
+	width: 100%;
+	background-color: grey;
+	color: white;
+}
+ .links{
+	width: 70%;
+	margin-left: 40px;
+	overflow: auto;
+	padding: 10px;
+}
+
+.links a{
+    text-decoration:none;
+    color: white;
+   
+}
+.right{
+    float: right;
+}
+
+.stack-title{
+	padding-top: 200px;
+	padding-left: 60px;
+	color: white;    
+}
+
+.title{
+	font-size: 50px;
+	color: rgb(245, 209, 62);
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+/**/
+.account-section{
+	margin: 1% 32%;
+	width: 40%;
+	
+}
+
+/**/
+/**/
+.question{
+	width: 73%;
+	background-color: white;
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-top: 4%;
+	position: absolute;
+	padding-right: 2%;
+	padding-left: 3%;
+	font-family: helvetica;
+	font-size: 15px;
+}
+#postee-name{
+ font-weight: bold;
+}
+.postee ul{
+	list-style: none;
+	margin: 17px 90px 0px 0px;
+	padding-left: 0px;
+}
+.postee ul li{
+	display: inline;
+	
+}
+.postee ul li a{
+	color: rgb(133, 0, 0);
+	text-decoration: none;
+}
+.anss{
+	margin-left:90px;
+	margin-right: 90px; 
+}
+
+  .flex-container > .flec1{
+    border: 2px solid grey;
+	width: 48%;
+	color: black;    
+	margin-left: 1%;
+	float: right;
+	top: -100px;
+	font-family: helvetica;
+	font-size: 15px;
+  }
+  .flex-container > .flec{
+    border: 2px solid grey;
+	width: 48%;
+	color: black;    
+	margin-left: 1%;
+	float: right;
+	top: -100px;
+	font-family: helvetica;
+	font-size: 15px;
+	
+  }
+  .flec p,h5,h3{
+	padding-left: 10px;
+	padding-right: 10px;
+  }
+  .number-top{
+	font-family: helvetica;
+	font-size: 15px;
+  }
+  .top-menu{
+	  text-align:center;
+  }
+  .flex-container > div ul li{
+	
+    font-size: 15px; 
+	display: inline;
+			
+}
+.flex-container > div p{    
+	margin-left: 10px;		
+}
+
+.number ul li{
+	
+	display: inline;
+	margin-left: 15px;
+	padding: 5px 5px 15px 5px;
+}
+.text-area{
+	width: 120%;
+	height: 80px;;
+}
+.menu{display:none;}
+#navv ul{
+	list-style: none;
+	margin-top: 100px;
+	background-color: 1px solid red;
+	
+}
+#navv{
+	background-color: grey;
+	list-style: none;
+	
+}
+.answer-comment li{
+   display: inline-block;
+   padding-right: 10%;
+}
+.fetch{
+	width: 100%;
+	text-align: center;
+	padding-left: 30%;
+}
+.search{
+	text-align: center;
+}
+.search-feild{
+	padding: 10px;
+}
+.search-btn{
+	padding: 10px;
+	border: 2px solid black;
+	margin-bottom: 5px;
+}
+.create-account-input{
+font-size: 20px;
+font-family: helvetica;
+}
+.logo-name{
+	margin-top: 0px;
+	font-size: 45px;
+font-family: helvetica;
+}
+.nav-bar{
+	font-family: helvetica;
+	font-size: 20px;
+  }
+  .home{
+	margin-top: 90px;
+  }
+  #login-input{
+font-family: helvetica;
+font-size: 20px;
+  }
+  #login-input-signup{
+	padding-top: 0px;
+	margin-top: 0px;
+	font-size: 15px;
+	font-family: helvetica;
+	  }
+	  #create-account-submit{
+		font-size: 20px;
+		font-family: helvetica;
+		width: 99%;
+	  }
+/*Media query*/
+@media screen and (max-width: 1112px){
+	
+	.title{
+		font-size: 40px;		
+	}
+	.question{
+		width: 80%;		
+		margin-left: 6%;
+		margin-top: 6%;		
+	}
+	.nav-bar{
+		font-family: helvetica;
+		font-size: 18px;
+	  }
+	  .left{
+		color: rgb(133, 0, 0);
+		float: left;
+		padding: 0px 0px 0px 0px;
+		font-size: 20px
+	}
+}
+@media screen and (max-width: 980px){	
+
+	.logo-name{
+		margin-top: 10px;
+		font-size: 30px;
+	
+	}
+	
+}
+@media screen and (max-width: 930px){	
+.nav-bar{
+	
+	font-size: 16px;
+  }
+  
+}
+@media screen and (max-width: 920px){	
+	.title{
+		font-size: 30px;		
+	}
+	.account-section{
+		margin: 1% 16%;
+		width: 80%;
+		
+	}
+	.title{
+		font-size: 35px;		
+	}
+	.logo-name{
+		margin-top: 10px;
+		font-size: 30px;
+	
+	}
+	
+}
+
+@media screen and (max-width: 780px){
+	.stack-title{
+		padding-top: 20px;
+		padding-left: 6px;
+		color: white;    
+	}
+	.title{
+		font-size: 20px;
+		padding-top: 0px;
+		margin-top: 0px;
+	}
+	.login-section{
+		margin: 33% 8%;
+		width: 100%;	
+	}
+	.main{
+		position: fixed;
+		top: 10%;
+		left: 14%;	
+		width: 75%;
+		bottom: 10%;
+		background-color: rgba(0, 0, 0, 0.5);
+		
+	}
+	.links{
+		width: 70%;
+		margin-left: 40px;
+		overflow: auto;
+		padding: 0px;
+		top:0;
+		margin-top: 0;
+
+	}
+	.question{
+		width: 89%;		
+		margin-left: 2%;
+		margin-top: 10%;			
+	}
+	.text-area{
+		width: 115%;
+		height: 70px;;
+	}
+	.nav ul li{
+		display: none;
+		margin-left: 15px;
+		padding: 5px 5px 15px 5px;	
+	}
+	.right{
+		display: none;
+	}
+	.menu{display:block;
+		float: right;
+		padding-right: 20px;
+		padding-top: 10px;
+	}
+}
+@media screen and (max-width: 698px){
+	.login-section{
+		margin: 38% 8%;
+		width: 100%;	
+	}	
+	.anss{
+		margin-left:50px;
+		margin-right: 50px; 
+	}
+}
+@media screen and (max-width: 648px){
+	.login-section{
+		margin: 40% 8%;
+		width: 100%;	
+	}
+	.flex-container > .flec1{
+		border: 2px solid grey;
+		width: 100%;
+		color: black;    
+		margin-left: 1%;
+		float: right;
+		top: -100px;
+	  }
+	  .flex-container > .flec{
+		border: 2px solid grey;
+		width: 100%;
+		color: black;    
+		margin-left: 1%;
+		float: right;
+		top: -100px;
+		margin-top: 20px;
+	  }
+	  .question{
+		width: 80%;		
+		margin-left: 6%;
+		margin-top:15%;		
+	}
+	
+}
+@media screen and (max-width: 490px){
+	.login-section{
+		margin: 54% 5%;
+		width: 100%;	
+	}	
+	.account-section{
+		margin: 2% 10%;
+		width: 90%;
+		
+	}
+	.anss{
+		margin-left:30px;
+		margin-right: 30px; 
+	}
+
+}
+@media screen and (max-width: 370px){
+	.login-section{
+		margin: 62% 5%;
+		width: 100%;	
+	}	
+	.main{
+		position: fixed;
+		top: 10%;
+		left: 5%;	
+		width: 90%;
+			
+	}
+	.main1{
+		position: fixed;
+		top: 8%;
+		left: 2%;	
+		right: 2%;
+		width: 98%;
+			
+	}
+	.text-area{
+		width: 100%;
+		height: 70px;;
+	}
+}
