@@ -2,6 +2,10 @@
 <html>
 <head>
 	<title>Stackoverflow-lite</title>
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -21,10 +25,10 @@
 							<div class="login-section">						
 								<div class="login">
                                     <p id="login-input">Login</p>
-									<form>
-										<input type="text" name="" id="login-input" placeholder="Username">
-										<input type="password" name="" id="login-input" placeholder="Password">
-										<a href="profile.html" id="login-input">Sign In</a>
+									<form id = "login-form">
+										<input type="email" class="login-input" id="email" placeholder="Username" />
+										<input type="password" class="login-input" id="password" placeholder="Password" />
+										<input type="submit" id="create-account-submit" value= "Submit" />
 									</form>
 								</div>
 
@@ -36,7 +40,6 @@
 						</div>
 		</div>
 		</div>
-		
-
 </body>
+<script src="js/main.js"></script>
 </html>
