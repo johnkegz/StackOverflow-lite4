@@ -65,18 +65,27 @@ function getOneQuestion(question_id){
 		data.forEach((post) => {
 			let question_id = post.question_id
 			output += `					
-					<div class="login">
-                    <p><h2 id="login-input">post a question<h2></p>
-                    <form id="question-form">
-                            <textarea class="text-area" id="question">
-                                  
-                                    </textarea> 
-                       <br/>
-                       <br/><br/><br/>
-					   <input type="submit" class="create-account-submit" value= "Submit" />
-                        
-                    </form>
-                </div>`;
+					<div class="postee">
+								<p>
+								<ul>
+									<li id="postee-name">Name:</li>
+									<li>${post.user_name}</a></li>									
+								</ul>
+							    </p>
+					</div>
+					<div>		
+						<p>     
+								${post.questions}
+						</p>																							
+						<p>
+							<ul class="answer-comment"><!--view number of answers-->
+								<li><a href="#" onclick = 'getOneQuestion(${post.question_id});'>Answer(s)</li>
+								<li><a href="#" onclick = 'Answer(${post.question_id});'>Post answer</a></li>
+																	
+							</ul>
+							</p>
+						<hr/>
+					</div>`;
 		});
 		document.getElementById('main-display').innerHTML = output;
 	})
@@ -191,13 +200,13 @@ function Answer(question_id){
 		output += `					
 					<div class="login">
                     <p><h2>post answer<h2></p>
-                    <form id = "answer-form">
+                    <form>
                             <textarea class="text-area" id="answer">
                                   
                             </textarea> 
                        <br/>
                        <br/><br/><br/>
-                        <input type="submit" class="create-account-submit" value= "Submit" />
+                        <input type="submit" class="create-account-submit" onclick = "AddAnswer(${question_id});" value= "Submit" />
                     </form>
                 </div>
 					
