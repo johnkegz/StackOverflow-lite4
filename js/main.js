@@ -256,9 +256,7 @@ function AddAnswer(question_id){
 	})
 		
 }
-function DeleteQuestion(question_id){
-	
-    
+function DeleteQuestion(question_id){    
    
     fetch('http://127.0.0.1:5000/api/v1/Delete /questions/'+question_id, {
         method: 'DELETE',
@@ -272,5 +270,5 @@ function DeleteQuestion(question_id){
     })
     .then((res) => res.json())
     .then((data) => console.log(data));
-		
+	ownQuestion();	
 }
