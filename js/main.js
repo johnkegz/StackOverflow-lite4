@@ -12,7 +12,7 @@ function copyDiv2(){
     var secondDivContent = document.getElementById('menu-display');
     secondDivContent.innerHTML = "";
 }
-//document.getElementById('get-posts').addEventListener('click', addQuestion);
+document.getElementById('get-posts').addEventListener('click', addQuestion);
 //document.getElementById('question-form').addEventListener('click', Question);
 //document.getElementById('get-post').addEventListener('click', getOneQuestion);
 //document.getElementById('delete-question').addEventListener('click', deleteQuestion);
@@ -39,7 +39,7 @@ function addQuestion(){
 						</p>																							
 						<p>
 							<ul class="answer-comment"><!--view number of answers-->
-								<li><a href="#" onclick = 'getOneQuestion();'>Answers(4)</li>
+								<li><a href="#" onclick = 'getOneQuestion(${post.question_id});'>Answer(s)</li>
 								<li><a href="post_answer.html">Post answer</a></li>
 																	
 							</ul>
@@ -49,18 +49,18 @@ function addQuestion(){
 					
 			`;
 		});
-		document.getElementById('output').innerHTML = output;
+		document.getElementById('main-display').innerHTML = output;
 	})
 }
 
 
-function getOneQuestion(){
-	alert(0);
-	fetch('http://127.0.0.1:5000/api/v1/questions/1')
+function getOneQuestion(question_id){
+	
+	fetch('http://127.0.0.1:5000/api/v1/questions/'+question_id)
 	.then((res) => res.json())
 	.then((data) => {
 		console.log(data);
-		let output = '<h2>QUESTION AND ANSWERS</h2>';
+		let output = '<h2>Question and its answers</h2>';
 		data.forEach((post) => {
 			let question_id = post.question_id
 			output += `					
@@ -88,7 +88,7 @@ function getOneQuestion(){
 					
 			`;
 		});
-		document.getElementById('output').innerHTML = output;
+		document.getElementById('main-display').innerHTML = output;
 	})
 }
 
