@@ -18,7 +18,7 @@ function Login(e){
     let email = document.getElementById('email').value;
 	let pass = document.getElementById('password').value;
  
-    fetch('http://127.0.0.1:5000/api/v1/auth/login', {
+    fetch('https://stackoverflow-lite2.herokuapp.com/api/v1/auth/login', {
         method: 'POST',
         headers: {
             'Accept': 'application/json, text/plain, */*',
