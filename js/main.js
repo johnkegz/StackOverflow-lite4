@@ -18,7 +18,7 @@ document.getElementById('post-question').addEventListener('click', postQuestion)
 //document.getElementById('get-post').addEventListener('click', getOneQuestion);
 //document.getElementById('delete-question').addEventListener('click', deleteQuestion);
 function addQuestion(){
-	fetch('http://127.0.0.1:5000/api/v1/questions')
+	fetch('https://stackoverflow-lite2.herokuapp.com/api/v1/questions')
 	.then((res) => res.json())
 	.then((data) => {
 		console.log(data);
@@ -57,7 +57,7 @@ function addQuestion(){
 
 function getOneQuestion(question_id){
 	
-	fetch('http://127.0.0.1:5000/api/v1/questions/'+question_id)
+	fetch('https://stackoverflow-lite2.herokuapp.com/api/v1/questions/'+question_id)
 	.then((res) => res.json())
 	.then((data) => {
 		console.log(data);
@@ -96,7 +96,7 @@ ownQuestion();
 
 function ownQuestion(){
 
-	fetch('http://127.0.0.1:5000/api/v1/ownquestions', {
+	fetch('https://stackoverflow-lite2.herokuapp.com/api/v1/ownquestions', {
         method: 'GET',
         headers: {
             'Accept': 'application/json, text/plain, */*',
@@ -138,7 +138,7 @@ function addPost(e){
     let email = document.getElementById('email').value;
 	let pass = document.getElementById('password').value;
 
-    fetch('http://127.0.0.1:5000/api/v1/auth/signup', {
+    fetch('https://stackoverflow-lite2.herokuapp.com/api/v1/auth/signup', {
         method: 'POST',
         headers: {
             'Accept': 'application/json, text/plain, */*',
@@ -178,7 +178,7 @@ function Question(){
    
     let qn = document.getElementById('question').value;
 	alert(0);
-    fetch('http://127.0.0.1:5000/api/v1/questions', {
+    fetch('https://stackoverflow-lite2.herokuapp.com/api/v1/questions', {
         method: 'POST',
         headers: {
             'Accept': 'application/json, text/plain, */*',
@@ -220,7 +220,7 @@ function AddAnswer(question_id){
 	
     let ans = document.getElementById('answer').value;
 	
-    fetch('http://127.0.0.1:5000/api/v1/questions/'+question_id+'/answers', {
+    fetch('https://stackoverflow-lite2.herokuapp.com/api/v1/questions/'+question_id+'/answers', {
         method: 'POST',
         headers: {
             'Accept': 'application/json, text/plain, */*',
@@ -258,7 +258,7 @@ function AddAnswer(question_id){
 }
 function DeleteQuestion(question_id){    
    
-    fetch('http://127.0.0.1:5000/api/v1/Delete /questions/'+question_id, {
+    fetch('https://stackoverflow-lite2.herokuapp.com/api/v1/Delete /questions/'+question_id, {
         method: 'DELETE',
         headers: {
             'Accept': 'application/json, text/plain, */*',
