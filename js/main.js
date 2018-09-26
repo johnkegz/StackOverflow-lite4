@@ -137,7 +137,7 @@ function postQuestion(){
 		
 		output += `					
 					<div class="login">
-                    <p><h2>post answer<h2></p>
+                    
                     <form>
                             <textarea class="text-area" id="question">
                                   
@@ -156,9 +156,10 @@ function Question(){
 	
    
     let qn = document.getElementById('question').value;
-	alert(0);
+	alert(qn);
     fetch('https://stackoverflow-lite2.herokuapp.com/api/v1/questions', {
-        method: 'POST',
+		method: 'POST',
+		mode: "cors",
         headers: {
             'Accept': 'application/json, text/plain, */*',
             'Content-type':'application/json',
