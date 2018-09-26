@@ -272,3 +272,22 @@ function DeleteQuestion(question_id){
     .then((data) => console.log(data));
 	ownQuestion();	
 }
+
+function accept(question_id, answer_id){
+	let ans = document.getElementById('accept').value;
+	
+    fetch('/api/v1/questions/'+question_id+'/answers/'+answer_id, {
+        method: 'PUT',
+        headers: {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-type':'application/json',
+			
+			'Authorization': `Bearer ${localStorage.getItem('accessToken')}`,
+			'Access-Control-Allow-Origin': '*'
+        },
+        body: JSON.stringify({user_action: ans})
+    })
+    .then((res) => res.json())
+    .then((data) => alert(accepted))
+		
+}
