@@ -164,7 +164,8 @@ function Question(){
             'Accept': 'application/json, text/plain, */*',
             'Content-type':'application/json',
 			'Authorization': `Bearer ${localStorage.getItem('accessToken')}`,
-			'Access-Control-Allow-Origin': '*'
+			'Access-Control-Allow-Origin': '*',
+			'mode': 'cors'
         },
         body: JSON.stringify({question: qn})
     })
